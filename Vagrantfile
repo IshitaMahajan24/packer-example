@@ -1,4 +1,4 @@
-# -*- mode: ruby -*-
+# flomotik packer
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
@@ -14,6 +14,6 @@ Vagrant.configure("2") do |config|
 
  ## Using NFS as it has much better performance
  ## On linux install nfs-kernel-server, MacOS works by default
- ## Will ask for root password to set some things up
+ ## Will ask for the root password to set some things
  config.vm.synced_folder ".", "/vagrant", :nfs => true
 end
